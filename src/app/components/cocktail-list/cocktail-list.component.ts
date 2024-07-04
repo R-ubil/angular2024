@@ -1,10 +1,10 @@
-import { Component, Input } from '@angular/core';
-import { CocktailsService } from '../cocktails.service';
-import { Cocktail } from '../cocktail';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterLink, Router } from '@angular/router';
-import { FavoriteToggleComponent } from '../favorite-toggle/favorite-toggle.component';
+import { Cocktail } from '../../cocktail';
+import { FavoriteToggleComponent } from '../../favorite-toggle/favorite-toggle.component';
+import { CocktailsService } from '../../services/cocktails.service';
 
 @Component({
   selector: 'app-cocktail-list',

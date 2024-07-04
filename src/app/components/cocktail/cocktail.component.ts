@@ -1,9 +1,10 @@
-import { Component, Input, OnInit, input } from '@angular/core';
-import { Cocktail } from '../cocktail';
-import { ActivatedRoute, RouterLink } from '@angular/router';
-import { CocktailsService } from '../cocktails.service';
 import { CommonModule } from '@angular/common';
-import { FavoriteToggleComponent } from '../favorite-toggle/favorite-toggle.component';
+import { Component, Input, OnInit, input } from '@angular/core';
+
+import { ActivatedRoute, RouterLink } from '@angular/router';
+import { Cocktail } from '../../cocktail';
+import { FavoriteToggleComponent } from '../../favorite-toggle/favorite-toggle.component';
+import { CocktailsService } from '../../services/cocktails.service';
 
 @Component({
   selector: 'app-cocktail',
