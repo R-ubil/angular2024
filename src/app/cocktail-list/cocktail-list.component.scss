@@ -1,0 +1,16 @@
+
+
+  .card {
+    display: flex; /* Use flexbox to align items horizontally */
+    border: 1px solid #ddd; /* Light border around the card */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensure content does not overflow the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    
+  }
+
+  .card-content {
+    flex: 1; /* Take up remaining space */
+    //padding: 20px; /* Space around the text content */
+    text-align: left;
+  }

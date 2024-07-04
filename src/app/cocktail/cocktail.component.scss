@@ -1,0 +1,13 @@
+.star-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.star-button i {
+  color: rgb(213, 213, 213);
+  font-size: 1.5em;
+}
+.star-button.active i {
+  color: gold;
+}

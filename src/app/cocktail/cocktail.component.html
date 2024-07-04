@@ -1,0 +1,54 @@
+<button routerLink="/" class="btn btn-primary">Back</button>
+<div>
+  <div class="card-body">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="{{ cocktail.imageUrl }}" class="img-fluid" alt="Image" />
+      </div>
+
+      <div class="col-md-8">
+        <h3 class="card-title">
+          {{ cocktail.name }}
+          <app-favorite-toggle
+            [itemId]="'star-' + cocktail.id"
+          ></app-favorite-toggle>
+        </h3>
+
+        <div class="row">
+          <div class="col-md-3">
+            <p class="font-weight-bold mb-0"><b>Type:</b></p>
+          </div>
+          <div class="col-md-9">
+            <p
+              [class.alcoholic]="cocktail.isAlcoholic"
+              [class.non-alcoholic]="!cocktail.isAlcoholic"
+            >
+              {{ cocktail.isAlcoholic ? "Alcoholic" : "Non-alcoholic" }}
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3">
+            <p class="font-weight-bold mb-0"><b>Ingredients:</b></p>
+          </div>
+          <div class="col-md-9">
+            <ul>
+              <li *ngFor="let ingredient of cocktail.ingredients">
+                {{ ingredient }}
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <p class="font-weight-bold mb-0"><b>instructions:</b></p>
+          </div>
+          <div class="col-md-9">
+            <p class="mb-0">{{ cocktail.instructions }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
