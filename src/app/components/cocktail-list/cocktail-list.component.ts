@@ -35,6 +35,6 @@ export class CocktailListComponent {
   }
 
   viewDetails(id: string): void {
-    this.router.navigate(['/cocktail', id]);
+    this.router.navigate(['/cocktails', id]);
   }
 }
