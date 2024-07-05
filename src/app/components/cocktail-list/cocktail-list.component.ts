@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterLink, Router } from '@angular/router';
 import { Cocktail } from '../../cocktail';
-import { FavoriteToggleComponent } from '../../favorite-toggle/favorite-toggle.component';
+import { FavoriteToggleComponent } from '../favorite-toggle/favorite-toggle.component';
 import { CocktailsService } from '../../services/cocktails.service';
 
 @Component({

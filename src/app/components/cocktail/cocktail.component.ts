@@ -3,7 +3,7 @@ import { Component, Input, OnInit, input } from '@angular/core';
 
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { Cocktail } from '../../cocktail';
-import { FavoriteToggleComponent } from '../../favorite-toggle/favorite-toggle.component';
+import { FavoriteToggleComponent } from '../favorite-toggle/favorite-toggle.component';
 import { CocktailsService } from '../../services/cocktails.service';
 
 @Component({

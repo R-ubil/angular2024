@@ -18,6 +18,7 @@ export class CocktailsService {
 
   //call API to get a drink by ID
   getCocktailById(cocktailId: string): Observable<Cocktail> {
-    return this.http.get<Cocktail>(`${this.baseUrl}/${cocktailId}`);
+    const url = `${this.baseUrl}/${cocktailId}`; // using template literal
+    return this.http.get<Cocktail>(url);
   }
 }

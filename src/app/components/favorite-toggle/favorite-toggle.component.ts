@@ -23,7 +23,6 @@ export class FavoriteToggleComponent implements OnInit {
   }
 
   private checkIfFavorite(itemId: string): boolean {
-    console.log('checkIfFavorite' + itemId);
     const favorites: string[] = JSON.parse(
       localStorage.getItem('favorites') || '[]'
     );
